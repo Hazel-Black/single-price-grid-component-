@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: hsl(179, 62%, 43%);
+  --main-faded-color: hsl(179, 62%, 43%, 0.9);
+  --accent-color: hsl(71, 73%, 54%);
+  --text-color: hsl(0, 0%, 100%);
+  --intro-text-color: hsl(218, 22%, 67%);
+  --body-bg: hsl(204, 43%, 93%);
+  --footer: hsl(228, 45%, 44%);
+}
+body {
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: var(--text-color);
+  line-height: 1.8;
+  font-family: Karla, sans-serif;
+  font-weight: 400;
+  margin-top: 5em;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.3em;
+}
+.box-one,
+.box-two,
+.box-three {
+  padding: 2rem;
+}
+.box-one {
+  background-color: var(--text-color);
+  color: var(--intro-text-color);
+}
+.box-one p {
+  font-size: 0.9rem;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+}
+h1 {
+  color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+h2 {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+.box-two {
+  background-color: var(--main-color);
+}
+b {
+  font-size: 2rem;
+}
+span {
+  opacity: 0.3;
+  font-weight: 300;
+}
+.lift {
+  margin-bottom: 1.5em;
+  opacity: 0.8;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 0.2em;
+  padding-inline: 6.8em;
+  padding-block: 1em;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: Karla, sans-serif;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.09);
+}
+.box-three {
+  background: var(--main-faded-color);
+}
+.box-three p {
+  font-weight: 300;
+  opacity: 0.6;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--main-color);
+}
+.attribution a {
+  color: var(--footer);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: var(--accent-color);
+}
+
+@media (min-width: 500px) {
+  .flex-box {
+    display: flex;
+  }
+  .box-one,
+  .box-two,
+  .box-three {
+    max-width: 33.7em;
+  }
+}
